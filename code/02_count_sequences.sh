@@ -7,9 +7,9 @@ echo
 for file; do
   Name1="File Name "
   Name2=$file
-  LineCount=$(grep -c "^>" $file)
+  LineCount=$(grep -c "^>" "$file")
   Name3="Has "
   Name4="Lines"
-  echo $Name1 $Name2 $Name3 $LineCount $Name4
+  echo "$Name1" "$Name2" "$Name3" "$LineCount" "$Name4"
   echo
 done
