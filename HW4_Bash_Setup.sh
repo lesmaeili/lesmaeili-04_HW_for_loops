@@ -7,14 +7,13 @@
 # Initial version created September 23, 2018
 # lesmaeili@dons.usfca.edu
 # Cloned respository
-echo "Clones repository"
-git clone https://github.com/lesmaeili/lesmaeili-04_HW_for_loops.git
+#echo "Clones repository"
+#git clone https://github.com/lesmaeili/lesmaeili-04_HW_for_loops.git
 # Set up directory structure
 echo "Setting up a directory structure"
 echo "Creating directory called:code data data/raw_data output"
 mkdir code data data/raw_data output output/tables output/figures
-# Add a blank README.md file to fill in later
-echo "Adding a blank README.md--Please fill me later!"
+#echo "Adding a blank README.md--Please fill me later!"
 # Download the fasta files into raw_daa subdirectory
 echo " Downloading the fasta files into raw_data subdirectory"
 cd data
@@ -31,7 +30,7 @@ cd ..
 cd ..
 git status
 echo " adding my script for first commit"
-git add HW_Bash_Setup.sh 
+git add HW_Bash_Setup.sh
 echo " committing my script"
 git commit -m " saves the script that uzips HW4 files"
 echo " saving first script HW4"
