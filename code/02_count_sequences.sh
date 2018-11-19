@@ -1,4 +1,4 @@
-#!/bin/#!/usr/bin/env bash
+#!/bin/bash
 #making for 04_HW_for_loops
 echo
 echo "Looping through files"
