@@ -1,6 +1,6 @@
 #!/bin/bash
 # Leila lesmaeili
-# Making a directory containing
+# Making a directory 
 mkdir code data data/raw_data output output/tables output/figures
 echo "Making directories"
 # Download the fasta files into raw_data subdirectory
@@ -13,3 +13,4 @@ unzip fasta_archive.zip
 echo "Done Downloading fasta files"
 echo " Remove fasta file archive folder"
 rm fasta_archive.zip
+touch output/tables/.gitkeep
