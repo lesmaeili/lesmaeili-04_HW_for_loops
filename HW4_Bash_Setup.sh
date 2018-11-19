@@ -25,15 +25,15 @@ echo "Done Downloading fasta files"
 echo " Remove fasta file archive folder"
 rm fasta_archive.zip
 # Ready for Gitstatus add script commit
-echo "check git status"
-cd ..
-cd ..
-git status
-echo " adding my script for first commit"
-git add HW_Bash_Setup.sh
-echo " committing my script"
-git commit -m " saves the script that uzips HW4 files"
-echo " saving first script HW4"
+#echo "check git status"
+#cd ..
+#cd ..
+#git status
+#echo " adding my script for first commit"
+#git add HW_Bash_Setup.sh
+#echo " committing my script"
+#git commit -m " saves the script that uzips HW4 files"
+#echo " saving first script HW4"
 # updating script to add git keep
 echo " go into empty files and create git keep files"
 touch .gitkeep
