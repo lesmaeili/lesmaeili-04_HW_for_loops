@@ -19,22 +19,12 @@ echo " Downloading the fasta files into raw_data subdirectory"
 cd data
 cd raw_data
 curl -L http://npk.io/PUlBaY+ -o fasta_archive.zip
+#cd target/path && { curl -O http://npk.io/PUlBaY+ -o fasta_archive.zip ; cd -; }
 echo " Unzip fasta files "
 unzip fasta_archive.zip
 echo "Done Downloading fasta files"
 echo " Remove fasta file archive folder"
 rm fasta_archive.zip
-# Ready for Gitstatus add script commit
-#echo "check git status"
-#cd ..
-#cd ..
-#git status
-#echo " adding my script for first commit"
-#git add HW_Bash_Setup.sh
-#echo " committing my script"
-#git commit -m " saves the script that uzips HW4 files"
-#echo " saving first script HW4"
-# updating script to add git keep
 echo " go into empty files and create git keep files"
 touch .gitkeep
 echo " Done creating. gitkeep files"

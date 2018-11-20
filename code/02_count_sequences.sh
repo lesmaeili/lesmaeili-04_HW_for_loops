@@ -11,6 +11,6 @@ for file; do
   Name3="Has "
   Name4="Lines"
   echo "$Name1" "$Name2" "$Name3" "$LineCount" "$Name4"
-  # the codes above put the loop results in a compelte sentence.
+  # the codes above put the loop results in a complete sentence.
   echo
 done
