@@ -6,26 +6,26 @@
 # Written by Leila Esmaeili
 # Initial version created September 23, 2018
 # lesmaeili@dons.usfca.edu
-# Cloned respository
-#echo "Clones repository"
-#git clone https://github.com/lesmaeili/lesmaeili-04_HW_for_loops.git
+
 # Set up directory structure
 echo "Setting up a directory structure"
 echo "Creating directory called:code data data/raw_data output"
 mkdir code data data/raw_data output output/tables output/figures
-#echo "Adding a blank README.md--Please fill me later!"
+
 # Download the fasta files into raw_daa subdirectory
-echo " Downloading the fasta files into raw_data subdirectory"
-#cd data
-#cd raw_data
-#curl -L http://npk.io/PUlBaY+ -o fasta_archive.zip
-cd data/raw_data && { curl -O http://npk.io/PUlBaY+ -o fasta_archive.zip ; cd -; }
-echo " Unzip fasta files "
-#unzip fasta_archive.zip
+echo "Downloading the fasta files into raw_data subdirectory"
+
+#
+curl -L http://npk.io/PUlBaY+ -o data/raw_data/fasta_archive.zip
+echo "Unzip fasta files "
+
 unzip data/raw_data/fasta_archive.zip
 echo "Done Downloading fasta files"
-echo " Remove fasta file archive folder"
+
+echo "Remove fasta file archive folder"
 rm data/raw_data/fasta_archive.zip
-echo " go into empty files and create git keep files"
-touch .gitkeep
-echo " Done creating. gitkeep files"
+
+echo "Create git keep files"
+touch output/figures/.gitkeep output/tables/.gitkeep
+
+echo "Done creating .gitkeep files"
