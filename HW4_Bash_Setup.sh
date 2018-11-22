@@ -15,7 +15,7 @@ mkdir code data data/raw_data output output/tables output/figures
 # Download the fasta files into raw_daa subdirectory
 echo "Downloading the fasta files into raw_data subdirectory"
 
-#
+# Download the fasta files into raw data subdirectory
 curl -L http://npk.io/PUlBaY+ -o data/raw_data/fasta_archive.zip
 echo "Unzip fasta files "
 
