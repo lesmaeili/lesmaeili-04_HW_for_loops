@@ -9,14 +9,9 @@
 echo
 echo "Looping through files"
 echo
-
-for file; do
-  Name1="File Name "
-  Name2=$file
-  LineCount=$(grep -c "^>" "$file")
-  Name3="Has "
-  Name4="Lines"
-  echo "$Name1" "$Name2" "$Name3" "$LineCount" "$Name4"
-  # the codes above put the loop results in a complete sentence.
-  echo
+for file in "$@"
+do
+filename=$(basename -s .fasta "$file")
+sequences=$(grep -c "^>" "$file")
+echo "The $filename has $sequences in it"
 done
